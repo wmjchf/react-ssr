@@ -5,7 +5,9 @@ import path from "path";
 import React from "react";
 import { renderToString } from "react-dom/server";
 import { StaticRouter } from "react-router-dom";
+import { Provider } from "react-redux";
 import Routes from "../src/routes/index.jsx";
+import { getStore } from "../src/store";
 
 const app = new Koa();
 const rootPath = process.cwd();
@@ -18,15 +20,16 @@ const template = fs.readFileSync(templatePath).toString();
 // 访问静态文件
 app.use(KoaStatic(staticPath1));
 app.use(async (ctx) => {
-  const routes = (
+  const store = getStore();
+  const router = (
     <StaticRouter location={ctx.path}>
       <Routes />
     </StaticRouter>
   );
-  const ssrContent = renderToString(routes);
+  const provider = <Provider store={store}>{router}</Provider>;
+  const ssrContent = renderToString(provider);
   // 把模板html的内容替换成组件内容
   const html = template.replace("<!-- ssr slot -->", ssrContent);
-  console.log(html);
   // 返回给浏览器
   ctx.body = html;
 });
