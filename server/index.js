@@ -4,7 +4,8 @@ import KoaStatic from "koa-static";
 import path from "path";
 import React from "react";
 import { renderToString } from "react-dom/server";
-import Home from "../src/page/home/index.jsx";
+import { StaticRouter } from "react-router-dom";
+import Routes from "../src/routes/index.jsx";
 
 const app = new Koa();
 const rootPath = process.cwd();
@@ -17,7 +18,12 @@ const template = fs.readFileSync(templatePath).toString();
 // 访问静态文件
 app.use(KoaStatic(staticPath1));
 app.use(async (ctx) => {
-  const ssrContent = renderToString(<Home />);
+  const routes = (
+    <StaticRouter location={ctx.path}>
+      <Routes />
+    </StaticRouter>
+  );
+  const ssrContent = renderToString(routes);
   // 把模板html的内容替换成组件内容
   const html = template.replace("<!-- ssr slot -->", ssrContent);
   console.log(html);
