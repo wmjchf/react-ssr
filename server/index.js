@@ -6,6 +6,7 @@ import React from "react";
 import { renderToString } from "react-dom/server";
 import { StaticRouter } from "react-router-dom";
 import { Provider } from "react-redux";
+import { renderRoutes } from "react-router-config";
 import Routes from "../src/routes/index.jsx";
 import { getStore } from "../src/store";
 
@@ -22,9 +23,7 @@ app.use(KoaStatic(staticPath1));
 app.use(async (ctx) => {
   const store = getStore();
   const router = (
-    <StaticRouter location={ctx.path}>
-      <Routes />
-    </StaticRouter>
+    <StaticRouter location={ctx.path}>{renderRoutes(Routes)}</StaticRouter>
   );
   const provider = <Provider store={store}>{router}</Provider>;
   const ssrContent = renderToString(provider);
