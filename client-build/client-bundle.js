@@ -9,26 +9,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./node_modules/@babel/runtime/helpers/arrayLikeToArray.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/arrayLikeToArray.js ***!
-  \*****************************************************************/
-/***/ ((module) => {
-
-eval("function _arrayLikeToArray(arr, len) {\n  if (len == null || len > arr.length) len = arr.length;\n\n  for (var i = 0, arr2 = new Array(len); i < len; i++) {\n    arr2[i] = arr[i];\n  }\n\n  return arr2;\n}\n\nmodule.exports = _arrayLikeToArray;\n\n//# sourceURL=webpack://jue-ssr/./node_modules/@babel/runtime/helpers/arrayLikeToArray.js?");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js":
-/*!******************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js ***!
-  \******************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray */ \"./node_modules/@babel/runtime/helpers/arrayLikeToArray.js\");\n\nfunction _arrayWithoutHoles(arr) {\n  if (Array.isArray(arr)) return arrayLikeToArray(arr);\n}\n\nmodule.exports = _arrayWithoutHoles;\n\n//# sourceURL=webpack://jue-ssr/./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js?");
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime/helpers/esm/extends.js":
 /*!************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/esm/extends.js ***!
@@ -73,46 +53,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime/helpers/iterableToArray.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/iterableToArray.js ***!
-  \****************************************************************/
-/***/ ((module) => {
-
-eval("function _iterableToArray(iter) {\n  if (typeof Symbol !== \"undefined\" && Symbol.iterator in Object(iter)) return Array.from(iter);\n}\n\nmodule.exports = _iterableToArray;\n\n//# sourceURL=webpack://jue-ssr/./node_modules/@babel/runtime/helpers/iterableToArray.js?");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/nonIterableSpread.js":
-/*!******************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/nonIterableSpread.js ***!
-  \******************************************************************/
-/***/ ((module) => {
-
-eval("function _nonIterableSpread() {\n  throw new TypeError(\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\");\n}\n\nmodule.exports = _nonIterableSpread;\n\n//# sourceURL=webpack://jue-ssr/./node_modules/@babel/runtime/helpers/nonIterableSpread.js?");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/toConsumableArray.js":
-/*!******************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/toConsumableArray.js ***!
-  \******************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("var arrayWithoutHoles = __webpack_require__(/*! ./arrayWithoutHoles */ \"./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js\");\n\nvar iterableToArray = __webpack_require__(/*! ./iterableToArray */ \"./node_modules/@babel/runtime/helpers/iterableToArray.js\");\n\nvar unsupportedIterableToArray = __webpack_require__(/*! ./unsupportedIterableToArray */ \"./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js\");\n\nvar nonIterableSpread = __webpack_require__(/*! ./nonIterableSpread */ \"./node_modules/@babel/runtime/helpers/nonIterableSpread.js\");\n\nfunction _toConsumableArray(arr) {\n  return arrayWithoutHoles(arr) || iterableToArray(arr) || unsupportedIterableToArray(arr) || nonIterableSpread();\n}\n\nmodule.exports = _toConsumableArray;\n\n//# sourceURL=webpack://jue-ssr/./node_modules/@babel/runtime/helpers/toConsumableArray.js?");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js":
-/*!***************************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js ***!
-  \***************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray */ \"./node_modules/@babel/runtime/helpers/arrayLikeToArray.js\");\n\nfunction _unsupportedIterableToArray(o, minLen) {\n  if (!o) return;\n  if (typeof o === \"string\") return arrayLikeToArray(o, minLen);\n  var n = Object.prototype.toString.call(o).slice(8, -1);\n  if (n === \"Object\" && o.constructor) n = o.constructor.name;\n  if (n === \"Map\" || n === \"Set\") return Array.from(o);\n  if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return arrayLikeToArray(o, minLen);\n}\n\nmodule.exports = _unsupportedIterableToArray;\n\n//# sourceURL=webpack://jue-ssr/./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js?");
-
-/***/ }),
-
 /***/ "./client/index.js":
 /*!*************************!*\
   !*** ./client/index.js ***!
@@ -120,7 +60,7 @@ eval("var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray */ \"./n
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/esm/react-router-dom.js\");\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ \"./node_modules/react-redux/es/index.js\");\n/* harmony import */ var react_router_config__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-config */ \"./node_modules/react-router-config/esm/react-router-config.js\");\n/* harmony import */ var _src_routes_index_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/routes/index.jsx */ \"./src/routes/index.jsx\");\n/* harmony import */ var _src_store__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../src/store */ \"./src/store/index.js\");\n\n\n\n\n\n\n\nvar store = (0,_src_store__WEBPACK_IMPORTED_MODULE_4__.getStore)();\nvar router = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.BrowserRouter, null, (0,react_router_config__WEBPACK_IMPORTED_MODULE_6__.renderRoutes)(_src_routes_index_jsx__WEBPACK_IMPORTED_MODULE_3__.default));\nvar provider = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_redux__WEBPACK_IMPORTED_MODULE_2__.Provider, {\n  store: store\n}, router);\nreact_dom__WEBPACK_IMPORTED_MODULE_1__.hydrate(provider, document.getElementById(\"root\"));\nstore.subscribe(function () {\n  return react_dom__WEBPACK_IMPORTED_MODULE_1__.hydrate(provider, document.getElementById(\"root\"));\n});\n\n//# sourceURL=webpack://jue-ssr/./client/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/esm/react-router-dom.js\");\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ \"./node_modules/react-redux/es/index.js\");\n/* harmony import */ var react_router_config__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-config */ \"./node_modules/react-router-config/esm/react-router-config.js\");\n/* harmony import */ var _src_routes_index_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/routes/index.jsx */ \"./src/routes/index.jsx\");\n/* harmony import */ var _src_store__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../src/store */ \"./src/store/index.js\");\n\n\n\n\n\n\n\nvar store = (0,_src_store__WEBPACK_IMPORTED_MODULE_4__.getClientStore)();\nvar router = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.BrowserRouter, null, (0,react_router_config__WEBPACK_IMPORTED_MODULE_6__.renderRoutes)(_src_routes_index_jsx__WEBPACK_IMPORTED_MODULE_3__.default));\nvar provider = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_redux__WEBPACK_IMPORTED_MODULE_2__.Provider, {\n  store: store\n}, router);\nreact_dom__WEBPACK_IMPORTED_MODULE_1__.hydrate(provider, document.getElementById(\"root\"));\n\n//# sourceURL=webpack://jue-ssr/./client/index.js?");
 
 /***/ }),
 
@@ -131,7 +71,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\n\nvar About = function About() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"about\"\n  }, \"\\u65E2\\u7136\\u6539\\u53D8\\u4E0D\\u4E86\\u4E16\\u754C\\u5C31\\u6539\\u53D8\\u81EA\\u5DF1.\");\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (About);\n\n//# sourceURL=webpack://jue-ssr/./src/page/about/index.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\n\nvar About = function About() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"about\"\n  }, \"\\u65E2\\u7136\\u6539\\u53D8\\u4E0D\\u4E86\\u4E16\\u754C\\u5C31\\u6539\\u53D8\\u81EA\\u5DF1.\");\n};\n\nAbout.loadData = function () {\n  setTimeout(function () {\n    console.log('about loadData');\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (About);\n\n//# sourceURL=webpack://jue-ssr/./src/page/about/index.jsx?");
 
 /***/ }),
 
@@ -142,7 +82,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/esm/react-router-dom.js\");\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ \"./node_modules/react-redux/es/index.js\");\n/* harmony import */ var _store_reducer_count_action__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../store/reducer/count/action */ \"./src/store/reducer/count/action.js\");\n\n\n\n\n\nvar Home = function Home(props) {\n  var showInfo = function showInfo() {\n    return alert(\"有用户点击\");\n  };\n\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"home\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"tip\",\n    onClick: showInfo\n  }, \"\\u6B22\\u8FCE\\u6765\\u5230\\u6211\\u7684\\u4E16\\u754C\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"inscrease\",\n    onClick: props.inscrease\n  }, \"+\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"count\"\n  }, props.count), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"decrease\",\n    onClick: props.decrease\n  }, \"-\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"btn\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {\n    to: \"/about\"\n  }, \"\\u53BB\\u5F80\\u6210\\u529F\\u7684\\u5F7C\\u5CB8\")));\n};\n\nvar mapStateToProp = function mapStateToProp(state) {\n  return {\n    count: state.count\n  };\n};\n\nvar mapActionToProp = {\n  inscrease: _store_reducer_count_action__WEBPACK_IMPORTED_MODULE_2__.inscrease,\n  decrease: _store_reducer_count_action__WEBPACK_IMPORTED_MODULE_2__.decrease\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProp, mapActionToProp)(Home));\n\n//# sourceURL=webpack://jue-ssr/./src/page/home/index.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/esm/react-router-dom.js\");\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ \"./node_modules/react-redux/es/index.js\");\n/* harmony import */ var _store_reducer_count_action__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../store/reducer/count/action */ \"./src/store/reducer/count/action.js\");\n/* harmony import */ var _store_reducer_todos_action__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../store/reducer/todos/action */ \"./src/store/reducer/todos/action.js\");\n/* harmony import */ var _store_reducer_todos__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../store/reducer/todos */ \"./src/store/reducer/todos/index.js\");\n\n\n\n\n\n\n\nvar Home = function Home(props) {\n  var showInfo = function showInfo() {\n    return alert(\"有用户点击\");\n  };\n\n  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {\n    _store_reducer_todos__WEBPACK_IMPORTED_MODULE_4__.todos.length > 0 && props.getTodo();\n  });\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"home\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"tip\",\n    onClick: showInfo\n  }, \"\\u6B22\\u8FCE\\u6765\\u5230\\u6211\\u7684\\u4E16\\u754C\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"inscrease\",\n    onClick: props.inscrease\n  }, \"+\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"count\"\n  }, props.count), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"decrease\",\n    onClick: props.decrease\n  }, \"-\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"btn\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Link, {\n    to: \"/about\"\n  }, \"\\u53BB\\u5F80\\u6210\\u529F\\u7684\\u5F7C\\u5CB8\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"ul\", {\n    className: \"todos\"\n  }, props.todos.map(function (todo) {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"li\", {\n      key: todo\n    }, todo);\n  })));\n};\n\nHome.loadData = function (store) {\n  return store.dispatch((0,_store_reducer_todos_action__WEBPACK_IMPORTED_MODULE_3__.getTodo)());\n};\n\nvar mapStateToProp = function mapStateToProp(state) {\n  return {\n    count: state.count,\n    todos: state.todos\n  };\n};\n\nvar mapActionToProp = {\n  inscrease: _store_reducer_count_action__WEBPACK_IMPORTED_MODULE_2__.inscrease,\n  decrease: _store_reducer_count_action__WEBPACK_IMPORTED_MODULE_2__.decrease,\n  getTodo: _store_reducer_todos_action__WEBPACK_IMPORTED_MODULE_3__.getTodo\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProp, mapActionToProp)(Home));\n\n//# sourceURL=webpack://jue-ssr/./src/page/home/index.jsx?");
 
 /***/ }),
 
@@ -153,7 +93,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _page_home_index_jsx__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../page/home/index.jsx */ \"./src/page/home/index.jsx\");\n/* harmony import */ var _page_about_index_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../page/about/index.jsx */ \"./src/page/about/index.jsx\");\n\n\nvar Routes = [{\n  path: \"/\",\n  exact: true,\n  component: _page_home_index_jsx__WEBPACK_IMPORTED_MODULE_0__.default\n}, {\n  path: \"/about\",\n  component: _page_about_index_jsx__WEBPACK_IMPORTED_MODULE_1__.default\n}];\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Routes);\n\n//# sourceURL=webpack://jue-ssr/./src/routes/index.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _page_home_index_jsx__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../page/home/index.jsx */ \"./src/page/home/index.jsx\");\n/* harmony import */ var _page_about_index_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../page/about/index.jsx */ \"./src/page/about/index.jsx\");\n\n\nvar Routes = [{\n  path: \"/\",\n  exact: true,\n  component: _page_home_index_jsx__WEBPACK_IMPORTED_MODULE_0__.default,\n  loadData: _page_home_index_jsx__WEBPACK_IMPORTED_MODULE_0__.default.loadData\n}, {\n  path: \"/about\",\n  component: _page_about_index_jsx__WEBPACK_IMPORTED_MODULE_1__.default,\n  loadData: _page_about_index_jsx__WEBPACK_IMPORTED_MODULE_1__.default.loadData\n}];\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Routes);\n\n//# sourceURL=webpack://jue-ssr/./src/routes/index.jsx?");
 
 /***/ }),
 
@@ -164,7 +104,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"getStore\": () => (/* binding */ getStore)\n/* harmony export */ });\n/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux */ \"./node_modules/redux/es/redux.js\");\n/* harmony import */ var _reducer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./reducer */ \"./src/store/reducer/index.js\");\n\n\nvar getStore = function getStore() {\n  return (0,redux__WEBPACK_IMPORTED_MODULE_1__.createStore)(_reducer__WEBPACK_IMPORTED_MODULE_0__.default);\n};\n\n//# sourceURL=webpack://jue-ssr/./src/store/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"getStore\": () => (/* binding */ getStore),\n/* harmony export */   \"getClientStore\": () => (/* binding */ getClientStore)\n/* harmony export */ });\n/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! redux */ \"./node_modules/redux/es/redux.js\");\n/* harmony import */ var redux_thunk__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux-thunk */ \"./node_modules/redux-thunk/es/index.js\");\n/* harmony import */ var _reducer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./reducer */ \"./src/store/reducer/index.js\");\n\n\n\nvar getStore = function getStore() {\n  return (0,redux__WEBPACK_IMPORTED_MODULE_2__.createStore)(_reducer__WEBPACK_IMPORTED_MODULE_1__.default, (0,redux__WEBPACK_IMPORTED_MODULE_2__.applyMiddleware)(redux_thunk__WEBPACK_IMPORTED_MODULE_0__.default));\n};\nvar getClientStore = function getClientStore() {\n  var defaultState = window.context.state;\n  return (0,redux__WEBPACK_IMPORTED_MODULE_2__.createStore)(_reducer__WEBPACK_IMPORTED_MODULE_1__.default, defaultState, (0,redux__WEBPACK_IMPORTED_MODULE_2__.applyMiddleware)(redux_thunk__WEBPACK_IMPORTED_MODULE_0__.default));\n};\n\n//# sourceURL=webpack://jue-ssr/./src/store/index.js?");
 
 /***/ }),
 
@@ -219,7 +159,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"ADDTODO\": () => (/* binding */ ADDTODO),\n/* harmony export */   \"DELTODO\": () => (/* binding */ DELTODO)\n/* harmony export */ });\nvar ADDTODO = \"ADDTODO\";\nvar DELTODO = \"DELTODO\";\n\n//# sourceURL=webpack://jue-ssr/./src/store/reducer/todos/action-types.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"INITTODO\": () => (/* binding */ INITTODO)\n/* harmony export */ });\nvar INITTODO = \"INITTODO\";\n\n//# sourceURL=webpack://jue-ssr/./src/store/reducer/todos/action-types.js?");
+
+/***/ }),
+
+/***/ "./src/store/reducer/todos/action.js":
+/*!*******************************************!*\
+  !*** ./src/store/reducer/todos/action.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"initTodo\": () => (/* binding */ initTodo),\n/* harmony export */   \"getTodo\": () => (/* binding */ getTodo)\n/* harmony export */ });\n/* harmony import */ var _action_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./action-types */ \"./src/store/reducer/todos/action-types.js\");\n/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../utils */ \"./src/utils/index.js\");\n\n\nvar initTodo = function initTodo(todos) {\n  return {\n    type: _action_types__WEBPACK_IMPORTED_MODULE_0__.INITTODO,\n    todos: todos\n  };\n};\nvar getTodo = function getTodo() {\n  return function (dispatch) {\n    return (0,_utils__WEBPACK_IMPORTED_MODULE_1__.promiseTimeout)(function (resolve) {\n      resolve([\"奥特曼打小怪兽\"]);\n    }).then(function (data) {\n      dispatch(initTodo(data));\n    });\n  };\n};\n\n//# sourceURL=webpack://jue-ssr/./src/store/reducer/todos/action.js?");
 
 /***/ }),
 
@@ -230,7 +181,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"todos\": () => (/* binding */ todos)\n/* harmony export */ });\n/* harmony import */ var _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/toConsumableArray */ \"./node_modules/@babel/runtime/helpers/toConsumableArray.js\");\n/* harmony import */ var _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _action_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./action-types */ \"./src/store/reducer/todos/action-types.js\");\n\n\n\nvar addTodo = function addTodo(todos, todo) {\n  var temp = _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default()(todos);\n\n  temp.push(todo);\n  return temp;\n};\n\nvar delTodo = function delTodo(todos, index) {\n  var temp = _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default()(todos);\n\n  temp.splice(index, 1);\n  return temp;\n};\n\nvar todos = function todos() {\n  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];\n  var action = arguments.length > 1 ? arguments[1] : undefined;\n\n  switch (action.type) {\n    case _action_types__WEBPACK_IMPORTED_MODULE_1__.ADDTODO:\n      return addTodo(state, action.todo);\n\n    case _action_types__WEBPACK_IMPORTED_MODULE_1__.DELTODO:\n      return delTodo(state, action.index);\n\n    default:\n      return state;\n  }\n};\n\n//# sourceURL=webpack://jue-ssr/./src/store/reducer/todos/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"todos\": () => (/* binding */ todos)\n/* harmony export */ });\n/* harmony import */ var _action_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./action-types */ \"./src/store/reducer/todos/action-types.js\");\n\nvar todos = function todos() {\n  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];\n  var action = arguments.length > 1 ? arguments[1] : undefined;\n\n  switch (action.type) {\n    case _action_types__WEBPACK_IMPORTED_MODULE_0__.INITTODO:\n      return action.todos;\n\n    default:\n      return state;\n  }\n};\n\n//# sourceURL=webpack://jue-ssr/./src/store/reducer/todos/index.js?");
+
+/***/ }),
+
+/***/ "./src/utils/index.js":
+/*!****************************!*\
+  !*** ./src/utils/index.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"promiseTimeout\": () => (/* binding */ promiseTimeout)\n/* harmony export */ });\nvar promiseTimeout = function promiseTimeout(callback, time) {\n  return new Promise(function (resolve, reject) {\n    setTimeout(function () {\n      callback(resolve, reject);\n    }, time);\n  });\n};\n\n//# sourceURL=webpack://jue-ssr/./src/utils/index.js?");
 
 /***/ }),
 
@@ -690,6 +652,17 @@ eval("/** @license React v17.0.1\n * react.development.js\n *\n * Copyright (c) 
 
 "use strict";
 eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs/react.development.js */ \"./node_modules/react/cjs/react.development.js\");\n}\n\n\n//# sourceURL=webpack://jue-ssr/./node_modules/react/index.js?");
+
+/***/ }),
+
+/***/ "./node_modules/redux-thunk/es/index.js":
+/*!**********************************************!*\
+  !*** ./node_modules/redux-thunk/es/index.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction createThunkMiddleware(extraArgument) {\n  return function (_ref) {\n    var dispatch = _ref.dispatch,\n        getState = _ref.getState;\n    return function (next) {\n      return function (action) {\n        if (typeof action === 'function') {\n          return action(dispatch, getState, extraArgument);\n        }\n\n        return next(action);\n      };\n    };\n  };\n}\n\nvar thunk = createThunkMiddleware();\nthunk.withExtraArgument = createThunkMiddleware;\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (thunk);\n\n//# sourceURL=webpack://jue-ssr/./node_modules/redux-thunk/es/index.js?");
 
 /***/ }),
 

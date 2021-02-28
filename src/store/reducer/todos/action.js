@@ -1,10 +1,19 @@
-import { DELTODO, ADDTODO } from "./action-types";
+import { INITTODO } from "./action-types";
+import { promiseTimeout } from "../../../utils";
 
-export const addTodo = (todo) => {
-  type: ADDTODO;
-  todo;
+export const initTodo = (todos) => {
+  return {
+    type: INITTODO,
+    todos: todos,
+  };
 };
-export const delTodo = (index) => {
-  type: DELTODO;
-  index;
+
+export const getTodo = () => {
+  return (dispatch) => {
+    return promiseTimeout((resolve) => {
+      resolve(["奥特曼打小怪兽"]);
+    }).then((data) => {
+      dispatch(initTodo(data));
+    });
+  };
 };
